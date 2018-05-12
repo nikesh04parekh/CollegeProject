@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7PJxPxVn6RJSUu4kUD1gk8PXwfGfkz28&callback=initMap">
+</script>
+<script type="text/javascript" src="common.js"></script>
+
+
+<style>
+
+body
+{
+    background:  url(https://media.giphy.com/media/EA3RHPEx6BlBu/giphy.gif) no-repeat center center fixed; 
+    background-size: cover;
+    color: yellow;
+}
+
+h1
+{
+  color: #EDEB51;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+         0px 8px 13px rgba(0,0,0,0.1),
+         0px 18px 23px rgba(0,0,0,0.1);
+}
+
+hr
+{
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.7s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#Lab {
+    top: 20px;
+    background-color: #2196F3;
+}
+
+#Hostel {
+    top: 80px;
+    background-color: #f44336;
+}
+
+#CEP {
+    top: 140px;
+    background-color: #58FC21;
+}
+
+#RC {
+    top: 200px;
+    background-color: #EBFF12;
+}
+
+#SAC {
+    top: 260px;
+    background-color: #FF00B3;
+}
+</style>
+</head>
+<body>
+
+<div  class="container">
+    <input type="text" id="speech" style="position:static;"/>
+    <button onclick="startConverting();" onblur="check()" style="position:static;"><i class="fa fa-microphone"></i></button>
+</div>
+
+<div id="mySidenav" class="sidenav" style="position: fixed;">
+  <a href="#Lab_1" id="Lab">Lab</a>
+  <a href="#Hostel_1" id="Hostel">Hostel</a>
+  <a href="#CEP_1" id="CEP">CEP</a>
+  <a href="#RC_1" id="RC">RC</a>
+  <a href="#SAC_1" id="SAC">SAC</a>
+</div>
+
+<div class="container" style="margin-left:100px;margin-top: 50px">
+<h1 id="Lab_1">Laboratory</h1>
+  <img src="lab.jpg" alt="Lab Building" width="100%" class="thumbnail" height="550px"/>
+
+  <p>
+    More than 1200 nodes connected via 100 Mbit/s switches and a 1 Gbit/s fiber backbone form the superstructure of the network. Each computer is at least a Pentium IV multi OS, fully connected terminal. Thus ensuring that there is at least one high-end computer available to each student and faculty on the campus.
+  </p>
+  <p>
+  The laboratory building houses teaching and research laboratories for electronics, communications, computers and networks. More than 800 computers are installed in these laboratories. Students use resources of laboratories (open until midnight) to solve problems, perform developmental experiments and work on projects guided by faculty.
+  </p>
+  <p>
+    By granting 24 hours lab facility and access to the network from each classroom and lecture theater information is made easily accessible from any point on campus. The students are provided a 16 Mbit/s line for their hostel rooms.
+  </p>
+  
+  <br>
+  <hr>
+  <br>
+
+<h1 id="Hostel_1">Hostel</h1>
+  <img src="Hostel.jpg" alt="Lab Building" width="100%" class="thumbnail" height="550px"/>
+  <p>
+    There are two residence halls, one for men and one for women. The men's hall has eight wings labelled A to H. Each wing has about 60 rooms. The total capacity of the eight wings is about 900 students on twin sharing basis.
+  </p>
+  <p>
+    The women's hall has two wings, the J and K wings, with a capacity of 195 residents. The women's hall has a guest room for mothers of residents. For students using their own computers in the room, internet facility is provided at a per-semester charge.
+  </p>
+  <p>
+    Hot water (using solar panels), laundry (dhobis come to collect and deliver clothes) and TV rooms with Dish TV are available at both halls of residence. A convenience store, local/STD/ISD facility and student warehouse are available at the men's hall of residence.
+  </p>
+  <p>
+    Residence at the halls is compulsory for B.Tech. students. Male postgraduate students are provided rooms subject to availability. All female post-graduate students, who choose to stay on campus, can be provided accommodation in the women's hall of residence.
+  </p>
+  
+  <br>
+  <hr>
+  <br>
+
+<h1 id="CEP_1">Continuing Education Program</h1>
+  <img src="CEP.JPG" alt="Lab Building" width="100%" class="thumbnail" height="550px"/>
+  <p>
+    CEP - Continuing Education Program is a special tailor made course that is created on request and in concurrence with our clients from Government, Industry or Social Organization. It is also possible that DA IICT Faculty will offer a program based on their skills and as a response to market needs.
+  </p>
+  <p>
+    DA-IICT has ICT as its core competency and therefore we will be providing courses that add value to or support the ICT knowledge and enhance the business of your organization.
+  </p>
+  <p>
+    Besides the excellent faculty we have a beautiful campus with a well established infrastructure available where we can provide hands-on sessions, besides theory sessions.
+  </p>
+  
+  <br>
+  <hr>
+  <br>
+
+<h1 id="RC_1">Resource Centre</h1>
+  <img src="RC.jpg" alt="Lab Building" width="100%" class="thumbnail" height="550px"/>
+  <p>
+    DAIICT Resource centre have various kind of book related to information technology,electronics, mathematics, science, economics, environment etc. and Daiict has Digital Resource centre of CDs and DVDs.There are many magazine also subscribed.
+  </p>
+
+  <br>
+  <hr>
+  <br>
+
+<h1 id="SAC_1">Student Activity Centre</h1>
+  <img src="sac.JPG" alt="Lab Building" width="100%" class="thumbnail" height="550px"/>
+  <p>
+    The Sports and Cultural Complex has facilities for outdoor sports such as cricket, football, basketball, volleyball and indoor games like badminton, table tennis, chess and carom. It has a gymnasium and a music room.
+  </p>  
+</div>
+
+</body>
+</html> 

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7PJxPxVn6RJSUu4kUD1gk8PXwfGfkz28&callback=initMap">
+</script>
+<script type="text/javascript" src="common.js"></script>
+
+<style>
+
+/*html
+{
+    font-family: pangolin;
+}*/
+
+body
+{
+    background:  url(https://media.giphy.com/media/112jVj3oFhHoHu/giphy.gif) no-repeat center center fixed; 
+    background-size: cover;
+    /*font-style: pangolin;*/
+    font-family: open sans;
+}
+
+#mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.7s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    position: fixed;
+}
+.image:hover{
+	opacity:0.88;
+	height:350px;
+	width:35%;
+}
+
+h1
+{
+    font-size: 88px;
+}
+
+/*.bdr
+{
+    border-color: #FFFF00;
+}*/
+
+a
+{
+    color: #FFFF00;
+}
+#mySidenav a:hover {
+    left: 0;
+    /*color: red;*/
+}
+
+#ifest {
+    top: 20px;
+    background-color: #4CAF50;
+}
+
+#Con {
+    top: 80px;
+    background-color: #2196F3;
+}
+
+#Syn {
+    top: 140px;
+    background-color: #f44336;
+}
+
+
+</style>
+</head>
+<body>
+
+<div  class="container">
+    <input type="text" id="speech" style="position:static;"/>
+    <button onclick="startConverting();" onblur="check()" style="position:static;"><i class="fa fa-microphone"></i></button>
+</div>
+
+<div id="mySidenav" class="sidenav"  style="font-style: pangolin">
+    <!-- <a href="homepage.html">HOME</a> -->
+   <a href="#ifest_1" id="ifest">Ifest</a>
+  <a href="#Concours_1" id="Con">Concours</a>
+  <a href="#Synapse_1" id="Syn">Synapse</a>
+</div>
+
+<div style="margin-left:150px;margin-top: 40px;color: #5500FF" class="container"  style="font-style: pangolin">
+    
+    <!-- I'FEST -->
+    
+    <h1 id="ifest_1"><a href="http://ieee.daiict.ac.in/ifest16/">I'Fest</a></h1>
+
+    <img src="finallogo.jpg" alt="Ifest logo" width="30%" class="thumbnail image" height="300px"/>
+    
+    <div class="jumbotron" style="background-color: #FFFB0F">
+    <p style="width:100%"><b>i.Fest</b> is an idea conceptualized by IEEE Student Branch at <b>DA-IICT</b>.<br><br>Our main aim is to bring the budding engineers from all over India to a common platform so that they can share their knowledge with their fellow imaginers. The next big thing for engineers is to pull out graphics from computer or television screen and integrate them into real world environment. With these innovative engineers coming up, it will become more pervasive and ubiquitous. <br><br>
+    </p>
+    </div>
+
+    <!-- Concours -->
+    <h1 id="Concours_1"><a href="http://concours.daiict.ac.in/">Concours</a></h1>
+
+    <img src="concours.jpg" alt="Concours logo" width="30%" class="thumbnail image" height="300px"/>
+    
+     <div class="jumbotron" style="background-color: #FFFB0F">
+    <p style="width:100%"><p>Concours is a four day long Annual Sports Festival of DA-IICT that gives an opportunity to participate in a variety of sports and fun events. With staggering footfall of more than 5000 people, Concours is the 2nd largest sports fest in Gujarat. Football, Cricket, Volleyball, Basketball, Badminton, Table Tennis, Lawn Tennis, Chess and Carrom are competitive sports event.
+    </p><br><br><br>
+    </div>
+        
+
+    <!-- Synapse -->
+    <h1 id="Synapse_1"><a href="http://synapse.daiict.ac.in/">Synapse</a></h1>
+
+    <img src="Synapse.jpg" alt="Synapse logo" width="30%" class="thumbnail image" height="300px"/>
+    
+     <div class="jumbotron" style="background-color: #FFFB0F">
+    <p style="width:100%"><p>A festival of knowledge and culture that falls generally in February-March each year. It links together different knowledge networks and reinforces the significance of Innovation, Interaction, Information, Communication and Technology in the 21st century through the agencies of panel discussions, lectures, workshops, exhibitions and exciting competitive events. It serves as a meeting place for creative minds to discuss their ideas and allow for testing of their ideas in the face of intense competition, rigorous evaluations and a touch of the carnival.
+    </p>
+    <p>
+    	The events at Synapse are designed to inspire solutions in which technology, culture, humanitarianism, and viability symbiotically coexist. The Synapse attempts to inspire creativity within the restrictions that are inevitable in any technological or cultural development.
+    </p>
+    </div>
+
+</div>
+     
+</body>
+</html> 
